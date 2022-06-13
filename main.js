@@ -7,15 +7,23 @@
 // getVoteCount({ upvotes: 132, downvotes: 132 }) ➞ 0
 // Notes
 // - You can expect only positive integers for vote counts.
-let voteCount = {
-    upvotes: 13,
-    downvotes: 0,
-    function(){
-        let calc = this.upvotes - this.downvotes;
-        return calc;
+// let voteCount = {
+//     upvotes: 13,
+//     downvotes: 0,
+//     function(){
+//         let calc = this.upvotes - this.downvotes;
+//         return calc;
+//     }
+// }
+// console.log(voteCount.function());
+
+const getVoteCount = {
+    voteCount(upvote, downvote){
+        result = upvote - downvote;
+        console.log(`upvotes: ${upvote}, downvotes: ${downvote} Results in ${result}`)
     }
 }
-console.log(voteCount.function());
+getVoteCount.voteCount(13, 0);
 
 
 
